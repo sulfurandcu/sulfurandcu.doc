@@ -1,0 +1,379 @@
+.markdown-section iframe[src*="buttons.github.io"] {
+    margin: 0;
+}
+
+figure.thumbnails img {
+    margin: 0.75em 0;
+    border-radius: 3px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1), 0 4px 12px rgba(0,0,0,0.15);
+}
+
+@media (min-width: 30em) {
+    figure.thumbnails:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    figure.thumbnails img {
+        float: left;
+        width: calc(50% - 0.75em);
+    }
+
+    figure.thumbnails img:nth-child(even) {
+        margin-left: 1.5em;
+    }
+
+    @supports (display: flex) {
+        figure.thumbnails {
+            display: flex;
+            align-items: center;
+        }
+
+        figure.thumbnails img {
+            flex-grow: 1;
+            width: 0;
+        }
+
+        figure.thumbnails img + img {
+            margin: 0 0 0 1.5em;
+        }
+    }
+}
+
+:root {
+  --code-font-family: "Iosevka Term Curly Slab", "Source Han Sans SC", "Source Han Sans TC", "Source Han Sans HC", "Source Han Sans CN", "Source Han Sans TW", "Source Han Sans HK", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --heading-h2-border-color: var(--mono-tint2);
+  --heading-h2-border-width: 0 0 0 0;
+  --heading-h2-padding: 0 0 0 0;
+  --heading-h1-font-weight: 600;
+  --heading-h2-font-weight: 600;
+  --heading-font-weight: 600;
+/*--sidebar-name-color: #4682b4;*/
+/*--sidebar-nav-link-color--active: #4682b4;*/
+  --sidebar-nav-link-text-decoration--hover: none;
+  --table-cell-border-width: 1px;
+  --table-head-border-width: 1px;
+}
+
+.sidebar-nav a:hover {
+  text-decoration: none;
+  font-weight: 700;
+}
+.markdown-section a {
+  text-decoration: none;
+}
+.markdown-section a:hover {
+  text-decoration: underline;
+  color: #2a6df4;
+}
+.markdown-section a.anchor {
+  text-decoration: none;
+}
+.markdown-section a.anchor:hover {
+  text-decoration: none;
+  font-weight: 700;
+  color: #000000;
+}
+.markdown-section table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  display: block;
+  margin-bottom: 1rem;
+  overflow: auto;
+  width: 100%;
+}
+.markdown-section th {
+  border: 1px solid #ddd;
+  font-weight: bold;
+  padding: 6px 13px;
+}
+.markdown-section td {
+  border: 1px solid #ddd;
+  padding: 6px 13px;
+}
+.markdown-section tr {
+  border-top: 1px solid #ccc;
+}
+.markdown-section tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.custom-font {
+  font-family:  "Iosevka Term Curly Slab", "Courier New",
+                "Source Han Serif SC", "Source Han Serif TC", "Source Han Serif HC", "Source Han Serif CN", "Source Han Serif TW", "Source Han Serif HK",
+                "Source Han Sans SC", "Source Han Sans TC", "Source Han Sans HC", "Source Han Sans CN", "Source Han Sans TW", "Source Han Sans HK",
+                "PingFang SC",
+                "Microsoft YaHei",
+                 sans-serif;
+}
+
+.custom-font-table {
+  font-size: xx-small;
+  font-family:  "Iosevka Term Curly Slab", "Courier New",
+                "Source Han Serif SC", "Source Han Serif TC", "Source Han Serif HC", "Source Han Serif CN", "Source Han Serif TW", "Source Han Serif HK",
+                "Source Han Sans SC", "Source Han Sans TC", "Source Han Sans HC", "Source Han Sans CN", "Source Han Sans TW", "Source Han Sans HK",
+                "PingFang SC",
+                "Microsoft YaHei",
+                 sans-serif;
+}
+
+.custom-645-09-001 {
+  color: #C00000;
+}
+
+.custom-645-09-002 {
+  color: #FC6423;
+}
+
+.custom-645-09-003 {
+  color: #00A000;
+}
+
+.custom-645-ph-004 {
+  color: #FF00FF;
+}
+
+.custom-645-ph-007 {
+  color: #800080;
+}
+
+.custom-645-kz-000 {
+  color: #C0C0C0;
+}
+
+.custom-645-kz-001 {
+  color: #0000FF;
+}
+
+.custom-645-kz-002 {
+	color: #00C0FF;
+  }
+
+.custom-645-nt-008 {
+  color: #0074E8;
+}
+
+body {
+  font-family:  "EB Garamond",
+                "Source Han Serif SC", "Source Han Serif TC", "Source Han Serif HC", "Source Han Serif CN", "Source Han Serif TW", "Source Han Serif HK",
+                "Source Han Sans SC", "Source Han Sans TC", "Source Han Sans HC", "Source Han Sans CN", "Source Han Sans TW", "Source Han Sans HK",
+                "PingFang SC",
+                "Microsoft YaHei",
+                 sans-serif;
+}
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/eb-garamond-v24-latin-regular.woff2') format('woff2'),
+       url('../fonts/eb-garamond-v24-latin-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+       url('../fonts/eb-garamond-v24-latin-medium.woff2') format('woff2'),
+       url('../fonts/eb-garamond-v24-latin-medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 600;
+  src: local(''),
+       url('../fonts/eb-garamond-v24-latin-semibold.woff2') format('woff2'),
+       url('../fonts/eb-garamond-v24-latin-semibold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('../fonts/eb-garamond-v24-latin-bold.woff2') format('woff2'),
+       url('../fonts/eb-garamond-v24-latin-bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 800;
+  src: local(''),
+       url('../fonts/eb-garamond-v24-latin-extrabold.woff2') format('woff2'),
+       url('../fonts/eb-garamond-v24-latin-extrabold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: italic;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/eb-garamond-v24-latin-italic.woff2') format('woff2'),
+       url('../fonts/eb-garamond-v24-latin-italic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: italic;
+  font-weight: 500;
+  src: local(''),
+       url('../fonts/eb-garamond-v24-latin-mediumitalic.woff2') format('woff2'),
+       url('../fonts/eb-garamond-v24-latin-mediumitalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: italic;
+  font-weight: 600;
+  src: local(''),
+       url('../fonts/eb-garamond-v24-latin-semibolditalic.woff2') format('woff2'),
+       url('../fonts/eb-garamond-v24-latin-semibolditalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: italic;
+  font-weight: 700;
+  src: local(''),
+       url('../fonts/eb-garamond-v24-latin-bolditalic.woff2') format('woff2'),
+       url('../fonts/eb-garamond-v24-latin-bolditalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: italic;
+  font-weight: 800;
+  src: local(''),
+       url('../fonts/eb-garamond-v24-latin-extrabolditalic.woff2') format('woff2'),
+       url('../fonts/eb-garamond-v24-latin-extrabolditalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Iosevka Term Curly Slab";
+  font-style: normal;
+  font-weight: 200;
+  src: local(''),
+       url('../fonts/iosevka-term-curly-slab-extralight.woff2') format('woff2'),
+       url('../fonts/iosevka-term-curly-slab-extralight.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Iosevka Term Curly Slab";
+  font-style: normal;
+  font-weight: 300;
+  src: local(''),
+       url('../fonts/iosevka-term-curly-slab-light.woff2') format('woff2'),
+       url('../fonts/iosevka-term-curly-slab-light.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Iosevka Term Curly Slab";
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/iosevka-term-curly-slab-regular.woff2') format('woff2'),
+       url('../fonts/iosevka-term-curly-slab-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Iosevka Term Curly Slab";
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+       url('../fonts/iosevka-term-curly-slab-medium.woff2') format('woff2'),
+       url('../fonts/iosevka-term-curly-slab-medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Iosevka Term Curly Slab";
+  font-style: normal;
+  font-weight: 600;
+  src: local(''),
+       url('../fonts/iosevka-term-curly-slab-semibold.woff2') format('woff2'),
+       url('../fonts/iosevka-term-curly-slab-semibold.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Iosevka Term Curly Slab";
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('../fonts/iosevka-term-curly-slab-bold.woff2') format('woff2'),
+       url('../fonts/iosevka-term-curly-slab-bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Iosevka Term Curly Slab";
+  font-style: normal;
+  font-weight: 800;
+  src: local(''),
+       url('../fonts/iosevka-term-curly-slab-extrabold.woff2') format('woff2'),
+       url('../fonts/iosevka-term-curly-slab-extrabold.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Iosevka Term Curly Slab";
+  font-style: oblique;
+  font-weight: 200;
+  src: local(''),
+       url('../fonts/iosevka-term-curly-slab-extralightoblique.woff2') format('woff2'),
+       url('../fonts/iosevka-term-curly-slab-extralightoblique.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Iosevka Term Curly Slab";
+  font-style: oblique;
+  font-weight: 300;
+  src: local(''),
+       url('../fonts/iosevka-term-curly-slab-lightoblique.woff2') format('woff2'),
+       url('../fonts/iosevka-term-curly-slab-lightoblique.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Iosevka Term Curly Slab";
+  font-style: oblique;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/iosevka-term-curly-slab-regularoblique.woff2') format('woff2'),
+       url('../fonts/iosevka-term-curly-slab-regularoblique.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Iosevka Term Curly Slab";
+  font-style: oblique;
+  font-weight: 500;
+  src: local(''),
+       url('../fonts/iosevka-term-curly-slab-mediumoblique.woff2') format('woff2'),
+       url('../fonts/iosevka-term-curly-slab-mediumoblique.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Iosevka Term Curly Slab";
+  font-style: oblique;
+  font-weight: 600;
+  src: local(''),
+       url('../fonts/iosevka-term-curly-slab-semiboldoblique.woff2') format('woff2'),
+       url('../fonts/iosevka-term-curly-slab-semiboldoblique.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Iosevka Term Curly Slab";
+  font-style: oblique;
+  font-weight: 700;
+  src: local(''),
+       url('../fonts/iosevka-term-curly-slab-boldoblique.woff2') format('woff2'),
+       url('../fonts/iosevka-term-curly-slab-boldoblique.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Iosevka Term Curly Slab";
+  font-style: oblique;
+  font-weight: 800;
+  src: local(''),
+       url('../fonts/iosevka-term-curly-slab-extraboldoblique.woff2') format('woff2'),
+       url('../fonts/iosevka-term-curly-slab-extraboldoblique.woff') format('woff');
+}

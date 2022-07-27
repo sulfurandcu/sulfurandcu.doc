@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no, viewport-fit=cover">
+    <meta name="description" content="A delightfully simple theme system for docsify.js. Features multiple themes with rich customization options, an improved desktop and mobile experience, and legacy browser support (IE10+).">
+    <meta name="google-site-verification" content="_EWJaM8G6xwMtEqemO4yN8WqSU2CaKVi3jTj0gLg48E">
+    <title>documents</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/cdn.jsdelivr.net/theme-simple.css" title="Simple">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- Alternate Stylesheets -->
+    <link rel="stylesheet alternate" href="assets/cdn.jsdelivr.net/theme-defaults.css" title="Defaults">
+    <link rel="stylesheet alternate" href="assets/cdn.jsdelivr.net/theme-simple-dark.css" title="Simple Dark">
+
+    <!-- Test Stylesheets -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/themes/vue.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/themes/buble.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/themes/dark.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/themes/pure.css"> -->
+</head>
+
+<body>
+    <div id="app"></div>
+
+    <!-- JavaScript -->
+    <script>
+        // Docsify
+        window.$docsify = {
+            // GENERAL
+            // -----------------------------------------------------------------
+            name        : 'ㄅㄆㄇㄈ',
+            repo        : '',
+
+            homepage    : 'index.md',
+
+            loadSidebar : true,
+            loadSidebar : 'index_sidebar.md',
+
+            loadNavbar  : false,
+            loadNavbar  : 'index_navibar.md',
+
+            // NAVIGATION
+            // -----------------------------------------------------------------
+            alias: {
+                '.*?/changelog': 'https://raw.githubusercontent.com/jhildenbiddle/docsify-themeable/master/CHANGELOG.md',
+            },
+            auto2top    : true,
+            maxLevel    : 3,
+            subMaxLevel : 2,
+            relativePath: true,
+
+            // PLUGINS
+            // -----------------------------------------------------------------
+            executeScript: true,
+            ga    : 'UA-100100910-3',
+            search: {
+                depth      : 3,
+                noData     : 'No results!',
+                placeholder: 'Search...'
+            },
+
+            markdown: {
+                renderer: {
+                    table: function (header, body) {
+                        // 从表体第一行读取列宽配置
+                        let firstRow = body.substring(0, body.indexOf("</tr>") + 5);
+                        // 将列宽配置dom字符串转换为可处理的字符串 :width,:width,...
+                        let colWidthConfig = firstRow
+                            .replace("<tr>", "")
+                            .replace("</tr>", "")
+                            .replaceAll("\n", "")
+                            .replace(/<td[^>]*>/g, "")
+                            .replaceAll("</td>", ",");
+                        colWidthConfig = colWidthConfig.substring(
+                            0,
+                            colWidthConfig.length - 1
+                        );
+                        let colgroupDomStr = "";
+                        // 当前读取到的第一行是列宽配置行, 拼接列宽配置dom字符串
+                        if (colWidthConfig.startsWith(":")) {
+                            // 去除多余的 :
+                            colWidthConfig = colWidthConfig.replaceAll(":", "");
+                            colgroupDomStr = "<colgroup>";
+                            for (let item of colWidthConfig.split(",")) {
+                                colgroupDomStr += `<col width="${item}"></col>`;
+                            }
+                            colgroupDomStr += "</colgroup>";
+
+                            body = body.substring(body.indexOf("</tr>") + 5);
+                        }
+
+                        // 拼接table dom字符串并返回
+                        return (
+                            "<table>" +
+                            colgroupDomStr +
+                            "<thead>" +
+                            header +
+                            "</thead><tbody>" +
+                            body +
+                            "</tbody>" +
+                            "</table>"
+                        );
+                    },
+                },
+            },
+        };
+    </script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/cdn.jsdelivr.net/main.js"></script>
+    <script src="assets/cdn.jsdelivr.net/docsify.js"></script>
+    <script src="assets/cdn.jsdelivr.net/docsify-themeable.js"></script>
+    <script src="assets/cdn.jsdelivr.net/docsify-tabs.js"></script>
+    <script src="assets/cdn.jsdelivr.net/docsify-pagination.js"></script>
+    <script src="assets/cdn.jsdelivr.net/external-script.js"></script>
+    <script src="assets/cdn.jsdelivr.net/ga.js"></script>
+    <script src="assets/cdn.jsdelivr.net/emoji.js"></script>
+    <script src="assets/cdn.jsdelivr.net/search.js"></script>
+    <script src="assets/cdn.jsdelivr.net/zoom-image.js"></script>
+    <script src="assets/cdn.jsdelivr.net/prism-c.js"></script>
+    <script src="assets/cdn.jsdelivr.net/prism-bash.js"></script>
+    <script src="assets/cdn.jsdelivr.net/pdfobject.js"></script>
+    <script src="assets/cdn.jsdelivr.net/docsify-pdf-embed.js"></script>
+</body>
+</html>
