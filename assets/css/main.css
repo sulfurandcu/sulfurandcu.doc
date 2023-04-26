@@ -43,15 +43,42 @@ figure.thumbnails img {
 
 :root {
   --code-font-family: "Iosevka Fixed Slab", "Source Han Sans SC", "Source Han Sans TC", "Source Han Sans HC", "Source Han Sans CN", "Source Han Sans TW", "Source Han Sans HK", "PingFang SC", "Microsoft YaHei", sans-serif;
-  --heading-h2-border-color: var(--mono-tint2);
-  --heading-h2-border-width: 0 0 0 0;
-  --heading-h2-padding: 0 0 0 0;
+  --heading-font-weight: 600;
   --heading-h1-font-weight: 600;
   --heading-h2-font-weight: 600;
-  --heading-font-weight: 600;
+  --heading-h3-font-weight: 600;
+  --heading-h4-font-weight: 600;
+  --heading-h5-font-weight: 600;
+  --heading-h6-font-weight: 600;
+  --heading-h1-font-size: 24px;
+  --heading-h2-font-size: 20px;
+  --heading-h3-font-size: 16px;
+  --heading-h4-font-size: 16px;
+  --heading-h5-font-size: 16px;
+  --heading-h6-font-size: 16px;
+  --heading-h1-margin: 1rem 0 0 0; /* ↑ → ↓ ← */
+  --heading-h2-margin: 1rem 0 0 0;
+  --heading-h3-margin: 1rem 0 0 0;
+  --heading-h4-margin: 1rem 0 0 0;
+  --heading-h5-margin: 1rem 0 0 0;
+  --heading-h6-margin: 1rem 0 0 0;
+  --heading-h1-padding: 0 0 0 0;
+  --heading-h2-padding: 0 0 0 0;
+  --heading-h3-padding: 0 0 0 0;
+  --heading-h4-padding: 0 0 0 0;
+  --heading-h5-padding: 0 0 0 0;
+  --heading-h6-padding: 0 0 0 0;
+  --heading-h1-border-width: 0 0 0 0;
+  --heading-h2-border-width: 0 0 0 0;
+  --heading-h3-border-width: 0 0 0 0;
+  --heading-h4-border-width: 0 0 0 0;
+  --heading-h5-border-width: 0 0 0 0;
+  --heading-h6-border-width: 0 0 0 0;
+  --heading-h2-border-color: var(--mono-tint2);
 /*--sidebar-name-color: #4682b4;*/
 /*--sidebar-nav-link-color--active: #4682b4;*/
   --sidebar-nav-link-text-decoration--hover: none;
+  --sidebar-width : 24rem;
   --table-cell-border-width: 1px;
   --table-head-border-width: 1px;
 }
