@@ -1,0 +1,60 @@
+<mxfile host="Electron" modified="2023-06-10T05:46:46.415Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.3.7 Chrome/112.0.5615.204 Electron/24.5.0 Safari/537.36" version="21.3.7" etag="-0t677jUlMLVy2mRzSfb" type="device">
+  <diagram id="iVSql-6X0XYwC5e_ua71" name="荷花池儿">
+    <mxGraphModel dx="940" dy="1718" grid="1" gridSize="10" guides="0" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Ib4eL5SK5AX9dLIsS4yE-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Sarasa Fixed SC;fontStyle=1;fontSize=10;fillColor=#f9f7ed;strokeColor=#36393d;" edge="1" parent="1" source="Ib4eL5SK5AX9dLIsS4yE-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="600" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ib4eL5SK5AX9dLIsS4yE-1" value="lilypond.exe" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Sarasa Fixed SC;fontStyle=1;fontSize=10;fillColor=#cce5ff;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="320" y="80" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Ib4eL5SK5AX9dLIsS4yE-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Sarasa Fixed SC;fontStyle=1;fontSize=10;fillColor=#f9f7ed;strokeColor=#36393d;" edge="1" parent="1" source="Ib4eL5SK5AX9dLIsS4yE-2" target="Ib4eL5SK5AX9dLIsS4yE-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ib4eL5SK5AX9dLIsS4yE-2" value="输入文件.txt&lt;br&gt;&lt;br&gt;符合lilypond语法规则的文本" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Sarasa Fixed SC;fontStyle=1;fontSize=10;fillColor=#f9f7ed;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry y="80" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Ib4eL5SK5AX9dLIsS4yE-6" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;fontFamily=Sarasa Fixed SC;fontStyle=1;fontSize=10;fillColor=#f9f7ed;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="610" y="60" width="20" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Ib4eL5SK5AX9dLIsS4yE-7" value="输出文件.PDF" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Sarasa Fixed SC;fontStyle=1;fontSize=10;fillColor=#f9f7ed;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="720" y="100" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Ib4eL5SK5AX9dLIsS4yE-8" value="输出文件.SVG" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Sarasa Fixed SC;fontStyle=1;fontSize=10;fillColor=#f9f7ed;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="720" y="140" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Ib4eL5SK5AX9dLIsS4yE-9" value="输出文件.PNG" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Sarasa Fixed SC;fontStyle=1;fontSize=10;fillColor=#f9f7ed;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="720" y="60" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Ib4eL5SK5AX9dLIsS4yE-11" value="MIDI" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Sarasa Fixed SC;fontStyle=1;fontSize=10;fillColor=#f9f7ed;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="640" y="60" width="40" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Ib4eL5SK5AX9dLIsS4yE-14" value="＋" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Sarasa Fixed SC;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="680" y="60" width="40" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Ib4eL5SK5AX9dLIsS4yE-15" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;fontFamily=Sarasa Fixed SC;fontStyle=1;fontSize=10;fillColor=#f9f7ed;strokeColor=#36393d;rotation=-180;" vertex="1" parent="1">
+          <mxGeometry x="810" y="60" width="20" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Ib4eL5SK5AX9dLIsS4yE-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Ib4eL5SK5AX9dLIsS4yE-16" target="Ib4eL5SK5AX9dLIsS4yE-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ib4eL5SK5AX9dLIsS4yE-16" value="简谱文件.txt&lt;br&gt;&lt;br&gt;符合jianpu-ly语法规则的文本" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Sarasa Fixed SC;fontStyle=1;fontSize=10;fillColor=#f9f7ed;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry y="-240" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Ib4eL5SK5AX9dLIsS4yE-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Ib4eL5SK5AX9dLIsS4yE-17" target="Ib4eL5SK5AX9dLIsS4yE-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ib4eL5SK5AX9dLIsS4yE-17" value="jianpu-ly.py" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Sarasa Fixed SC;fontStyle=1;fontSize=10;fillColor=#cce5ff;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry y="-80" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Ib4eL5SK5AX9dLIsS4yE-25" value="＋" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Sarasa Fixed SC;fontStyle=1;fontColor=none;noLabel=1;" vertex="1" parent="1">
+          <mxGeometry x="680" y="-260" width="40" height="120" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
