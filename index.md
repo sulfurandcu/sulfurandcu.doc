@@ -1,5 +1,5 @@
 <br>
-<center><b>ME</b></center>
+<center><a href="https://sulfurandcu.github.io/"><b>ME</b></a></center>
 <br>
 <br>
 <br>
@@ -12,7 +12,7 @@
 <br>
 <br>
 <center></center>
-<center><a href="https://sulfurandcu.github.io/">🐞</a></center>
+<center><a href="#/links">🔘</a></center>
 <br>
 <br>
 <br>
