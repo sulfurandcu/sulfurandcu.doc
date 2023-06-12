@@ -1,5 +1,59 @@
-.markdown-section iframe[src*="buttons.github.io"] {
-    margin: 0;
+:root {
+    --code-font-family: "Iosevka Fixed Slab", "Source Han Sans SC", "Source Han Sans TC", "Source Han Sans HC", "Source Han Sans CN", "Source Han Sans TW", "Source Han Sans HK", "PingFang SC", "Microsoft YaHei", sans-serif;
+    --heading-font-weight: 600;
+    --heading-h1-font-weight: 600;
+    --heading-h2-font-weight: 600;
+    --heading-h3-font-weight: 600;
+    --heading-h4-font-weight: 600;
+    --heading-h5-font-weight: 600;
+    --heading-h6-font-weight: 600;
+    --heading-h1-font-size: 24px;
+    --heading-h2-font-size: 20px;
+    --heading-h3-font-size: 16px;
+    --heading-h4-font-size: 16px;
+    --heading-h5-font-size: 16px;
+    --heading-h6-font-size: 16px;
+    --heading-h1-margin: 1rem 0 0 0; /* ↑ → ↓ ← */
+    --heading-h2-margin: 1rem 0 0 0;
+    --heading-h3-margin: 1rem 0 0 0;
+    --heading-h4-margin: 1rem 0 0 0;
+    --heading-h5-margin: 1rem 0 0 0;
+    --heading-h6-margin: 1rem 0 0 0;
+    --heading-h1-padding: 0 0 0 0;
+    --heading-h2-padding: 0 0 0 0;
+    --heading-h3-padding: 0 0 0 0;
+    --heading-h4-padding: 0 0 0 0;
+    --heading-h5-padding: 0 0 0 0;
+    --heading-h6-padding: 0 0 0 0;
+    --heading-h1-border-width: 0 0 0 0;
+    --heading-h2-border-width: 0 0 0 0;
+    --heading-h3-border-width: 0 0 0 0;
+    --heading-h4-border-width: 0 0 0 0;
+    --heading-h5-border-width: 0 0 0 0;
+    --heading-h6-border-width: 0 0 0 0;
+    --heading-h2-border-color: var(--mono-tint2);
+    /*--sidebar-name-color: #4682b4;*/
+    /*--sidebar-nav-link-color--active: #4682b4;*/
+    --sidebar-nav-link-text-decoration--hover: none;
+    --sidebar-width : 24rem;
+    --table-cell-border-width: 1px;
+    --table-head-border-width: 1px;
+}
+
+:root {
+    --text-wdth: 90;
+    --text-opsz: 40;
+    --text-YTLC: 460
+}
+
+body {
+    font-family:"Amstelvar",
+                "Source Han Serif SC", "Source Han Serif TC", "Source Han Serif HC", "Source Han Serif CN", "Source Han Serif TW", "Source Han Serif HK",
+                "Source Han Sans SC", "Source Han Sans TC", "Source Han Sans HC", "Source Han Sans CN", "Source Han Sans TW", "Source Han Sans HK",
+                "PingFang SC",
+                "Microsoft YaHei",
+                sans-serif;
+    font-variation-settings: "wdth" var(--text-wdth),"opsz" var(--text-opsz),"YTLC" var(--text-YTLC);
 }
 
 figure.thumbnails img {
@@ -8,21 +62,135 @@ figure.thumbnails img {
     box-shadow: 0 2px 6px rgba(0,0,0,0.1), 0 4px 12px rgba(0,0,0,0.15);
 }
 
+.sidebar-nav a:hover {
+    text-decoration: none;
+    font-weight: 700;
+}
+.markdown-section a {
+    text-decoration: none;
+}
+.markdown-section a:hover {
+    text-decoration: underline;
+    color: #2a6df4;
+}
+.markdown-section a.anchor {
+    text-decoration: none;
+}
+.markdown-section a.anchor:hover {
+    text-decoration: none;
+    font-weight: 700;
+    color: #000000;
+}
+.markdown-section table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    display: block;
+    margin-bottom: 1rem;
+    overflow: auto;
+    width: 100%;
+}
+.markdown-section th {
+    border: 1px solid #ddd;
+    font-weight: bold;
+    padding: 6px 13px;
+}
+.markdown-section td {
+    border: 1px solid #ddd;
+    padding: 6px 13px;
+}
+.markdown-section tr {
+    border-top: 1px solid #ccc;
+}
+.markdown-section tr:nth-child(2n) {
+    background-color: #f8f8f8;
+}
+.markdown-section h1,h2,h3,h4,h5,h6 {
+    font-variation-settings:'wght' 550, 'opsz' 60, 'YOPQ' 90
+}
+.markdown-section iframe[src*="buttons.github.io"] {
+    margin: 0;
+}
+
+.emphasis-point {
+    font-weight:normal;
+    text-emphasis:'•';
+    -webkit-text-emphasis:'•';
+    -moz-text-emphasis:'•';
+    text-emphasis-position:under;
+    -webkit-text-emphasis-position:under;
+    -moz-text-emphasis-position:under
+}
+
+.custom-font {
+    font-family:"Iosevka Fixed Slab", "Courier New",
+                "Source Han Serif SC", "Source Han Serif TC", "Source Han Serif HC", "Source Han Serif CN", "Source Han Serif TW", "Source Han Serif HK",
+                "Source Han Sans SC", "Source Han Sans TC", "Source Han Sans HC", "Source Han Sans CN", "Source Han Sans TW", "Source Han Sans HK",
+                "PingFang SC",
+                "Microsoft YaHei",
+                sans-serif;
+}
+
+.custom-font-table {
+    font-size: xx-small;
+    font-family:"Iosevka Fixed Slab", "Courier New",
+                "Source Han Serif SC", "Source Han Serif TC", "Source Han Serif HC", "Source Han Serif CN", "Source Han Serif TW", "Source Han Serif HK",
+                "Source Han Sans SC", "Source Han Sans TC", "Source Han Sans HC", "Source Han Sans CN", "Source Han Sans TW", "Source Han Sans HK",
+                "PingFang SC",
+                "Microsoft YaHei",
+                sans-serif;
+}
+
+.custom-645-09-001 {
+    color: #C00000;
+}
+
+.custom-645-09-002 {
+    color: #FC6423;
+}
+
+.custom-645-09-003 {
+    color: #00A000;
+}
+
+.custom-645-ph-004 {
+    color: #FF00FF;
+}
+
+.custom-645-ph-007 {
+    color: #800080;
+}
+
+.custom-645-kz-000 {
+    color: #C0C0C0;
+}
+
+.custom-645-kz-001 {
+    color: #0000FF;
+}
+
+.custom-645-kz-002 {
+    color: #00C0FF;
+}
+
+.custom-645-nt-008 {
+    color: #0074E8;
+}
+
 @media (min-width: 30em) {
     figure.thumbnails:after {
         content: "";
         display: table;
         clear: both;
-    }
+}
 
     figure.thumbnails img {
         float: left;
         width: calc(50% - 0.75em);
-    }
+}
 
     figure.thumbnails img:nth-child(even) {
         margin-left: 1.5em;
-    }
+}
 
     @supports (display: flex) {
         figure.thumbnails {
@@ -38,256 +206,119 @@ figure.thumbnails img {
         figure.thumbnails img + img {
             margin: 0 0 0 1.5em;
         }
-    }
 }
-
-:root {
-  --code-font-family: "Iosevka Fixed Slab", "Source Han Sans SC", "Source Han Sans TC", "Source Han Sans HC", "Source Han Sans CN", "Source Han Sans TW", "Source Han Sans HK", "PingFang SC", "Microsoft YaHei", sans-serif;
-  --heading-font-weight: 600;
-  --heading-h1-font-weight: 600;
-  --heading-h2-font-weight: 600;
-  --heading-h3-font-weight: 600;
-  --heading-h4-font-weight: 600;
-  --heading-h5-font-weight: 600;
-  --heading-h6-font-weight: 600;
-  --heading-h1-font-size: 24px;
-  --heading-h2-font-size: 20px;
-  --heading-h3-font-size: 16px;
-  --heading-h4-font-size: 16px;
-  --heading-h5-font-size: 16px;
-  --heading-h6-font-size: 16px;
-  --heading-h1-margin: 1rem 0 0 0; /* ↑ → ↓ ← */
-  --heading-h2-margin: 1rem 0 0 0;
-  --heading-h3-margin: 1rem 0 0 0;
-  --heading-h4-margin: 1rem 0 0 0;
-  --heading-h5-margin: 1rem 0 0 0;
-  --heading-h6-margin: 1rem 0 0 0;
-  --heading-h1-padding: 0 0 0 0;
-  --heading-h2-padding: 0 0 0 0;
-  --heading-h3-padding: 0 0 0 0;
-  --heading-h4-padding: 0 0 0 0;
-  --heading-h5-padding: 0 0 0 0;
-  --heading-h6-padding: 0 0 0 0;
-  --heading-h1-border-width: 0 0 0 0;
-  --heading-h2-border-width: 0 0 0 0;
-  --heading-h3-border-width: 0 0 0 0;
-  --heading-h4-border-width: 0 0 0 0;
-  --heading-h5-border-width: 0 0 0 0;
-  --heading-h6-border-width: 0 0 0 0;
-  --heading-h2-border-color: var(--mono-tint2);
-/*--sidebar-name-color: #4682b4;*/
-/*--sidebar-nav-link-color--active: #4682b4;*/
-  --sidebar-nav-link-text-decoration--hover: none;
-  --sidebar-width : 24rem;
-  --table-cell-border-width: 1px;
-  --table-head-border-width: 1px;
-}
-
-.sidebar-nav a:hover {
-  text-decoration: none;
-  font-weight: 700;
-}
-.markdown-section a {
-  text-decoration: none;
-}
-.markdown-section a:hover {
-  text-decoration: underline;
-  color: #2a6df4;
-}
-.markdown-section a.anchor {
-  text-decoration: none;
-}
-.markdown-section a.anchor:hover {
-  text-decoration: none;
-  font-weight: 700;
-  color: #000000;
-}
-.markdown-section table {
-  border-collapse: collapse;
-  border-spacing: 0;
-  display: block;
-  margin-bottom: 1rem;
-  overflow: auto;
-  width: 100%;
-}
-.markdown-section th {
-  border: 1px solid #ddd;
-  font-weight: bold;
-  padding: 6px 13px;
-}
-.markdown-section td {
-  border: 1px solid #ddd;
-  padding: 6px 13px;
-}
-.markdown-section tr {
-  border-top: 1px solid #ccc;
-}
-.markdown-section tr:nth-child(2n) {
-  background-color: #f8f8f8;
-}
-
-.custom-font {
-  font-family:  "Iosevka Fixed Slab", "Courier New",
-                "Source Han Serif SC", "Source Han Serif TC", "Source Han Serif HC", "Source Han Serif CN", "Source Han Serif TW", "Source Han Serif HK",
-                "Source Han Sans SC", "Source Han Sans TC", "Source Han Sans HC", "Source Han Sans CN", "Source Han Sans TW", "Source Han Sans HK",
-                "PingFang SC",
-                "Microsoft YaHei",
-                 sans-serif;
-}
-
-.custom-font-table {
-  font-size: xx-small;
-  font-family:  "Iosevka Fixed Slab", "Courier New",
-                "Source Han Serif SC", "Source Han Serif TC", "Source Han Serif HC", "Source Han Serif CN", "Source Han Serif TW", "Source Han Serif HK",
-                "Source Han Sans SC", "Source Han Sans TC", "Source Han Sans HC", "Source Han Sans CN", "Source Han Sans TW", "Source Han Sans HK",
-                "PingFang SC",
-                "Microsoft YaHei",
-                 sans-serif;
-}
-
-.custom-645-09-001 {
-  color: #C00000;
-}
-
-.custom-645-09-002 {
-  color: #FC6423;
-}
-
-.custom-645-09-003 {
-  color: #00A000;
-}
-
-.custom-645-ph-004 {
-  color: #FF00FF;
-}
-
-.custom-645-ph-007 {
-  color: #800080;
-}
-
-.custom-645-kz-000 {
-  color: #C0C0C0;
-}
-
-.custom-645-kz-001 {
-  color: #0000FF;
-}
-
-.custom-645-kz-002 {
-	color: #00C0FF;
-  }
-
-.custom-645-nt-008 {
-  color: #0074E8;
-}
-
-.emphasis-point {
-  font-weight:normal;
-  text-emphasis:'•';
-  -webkit-text-emphasis:'•';
-  -moz-text-emphasis:'•';
-  text-emphasis-position:under;
-  -webkit-text-emphasis-position:under;
-  -moz-text-emphasis-position:under
-}
-
-body {
-  font-family:  "EB Garamond",
-                "Source Han Serif SC", "Source Han Serif TC", "Source Han Serif HC", "Source Han Serif CN", "Source Han Serif TW", "Source Han Serif HK",
-                "Source Han Sans SC", "Source Han Sans TC", "Source Han Sans HC", "Source Han Sans CN", "Source Han Sans TW", "Source Han Sans HK",
-                "PingFang SC",
-                "Microsoft YaHei",
-                 sans-serif;
 }
 
 @font-face {
-  font-family: 'EB Garamond';
-  font-style: normal;
-  font-weight: 400;
-  src: local(''),
-       url('../fonts/eb-garamond-v24-latin/eb-garamond-v24-latin-regular.woff2') format('woff2'),
-       url('../fonts/eb-garamond-v24-latin/eb-garamond-v24-latin-regular.woff') format('woff');
+    font-family: 'Amstelvar';
+    font-style: normal;
+    font-weight: 100 900;
+    font-stretch: 50% 125%;
+    font-display: swap;
+    src: local(''),
+         url("../fonts/Amstelvar-Roman-VF.woff2") format("woff2-variations"),
+         url("../fonts/Amstelvar-Roman-VF.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: 'EB Garamond';
-  font-style: normal;
-  font-weight: 500;
-  src: local(''),
-       url('../fonts/eb-garamond-v24-latin/eb-garamond-v24-latin-medium.woff2') format('woff2'),
-       url('../fonts/eb-garamond-v24-latin/eb-garamond-v24-latin-medium.woff') format('woff');
+    font-family: 'Amstelvar';
+    font-style: italic;
+    font-weight: 100 900;
+    font-stretch: 50% 125%;
+    font-display: swap;
+    src: local(''),
+         url("../fonts/Amstelvar-Italic-VF.woff2") format("woff2-variations"),
+         url("../fonts/Amstelvar-Italic-VF.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: 'EB Garamond';
-  font-style: normal;
-  font-weight: 600;
-  src: local(''),
-       url('../fonts/eb-garamond-v24-latin/eb-garamond-v24-latin-semibold.woff2') format('woff2'),
-       url('../fonts/eb-garamond-v24-latin/eb-garamond-v24-latin-semibold.woff') format('woff');
+    font-family: 'EB Garamond';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/eb-garamond-v24-latin/eb-garamond-v24-latin-regular.woff2') format('woff2'),
+         url('../fonts/eb-garamond-v24-latin/eb-garamond-v24-latin-regular.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'EB Garamond';
-  font-style: normal;
-  font-weight: 700;
-  src: local(''),
-       url('../fonts/eb-garamond-v24-latin/eb-garamond-v24-latin-bold.woff2') format('woff2'),
-       url('../fonts/eb-garamond-v24-latin/eb-garamond-v24-latin-bold.woff') format('woff');
+    font-family: 'EB Garamond';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+         url('../fonts/eb-garamond-v24-latin/eb-garamond-v24-latin-medium.woff2') format('woff2'),
+         url('../fonts/eb-garamond-v24-latin/eb-garamond-v24-latin-medium.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'EB Garamond';
-  font-style: normal;
-  font-weight: 800;
-  src: local(''),
-       url('../fonts/eb-garamond-v24-latin/eb-garamond-v24-latin-extrabold.woff2') format('woff2'),
-       url('../fonts/eb-garamond-v24-latin/eb-garamond-v24-latin-extrabold.woff') format('woff');
+    font-family: 'EB Garamond';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+         url('../fonts/eb-garamond-v24-latin/eb-garamond-v24-latin-semibold.woff2') format('woff2'),
+         url('../fonts/eb-garamond-v24-latin/eb-garamond-v24-latin-semibold.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'EB Garamond';
-  font-style: italic;
-  font-weight: 400;
-  src: local(''),
-       url('../fonts/eb-garamond-v24-latin/eb-garamond-v24-latin-italic.woff2') format('woff2'),
-       url('../fonts/eb-garamond-v24-latin/eb-garamond-v24-latin-italic.woff') format('woff');
+    font-family: 'EB Garamond';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/eb-garamond-v24-latin/eb-garamond-v24-latin-bold.woff2') format('woff2'),
+         url('../fonts/eb-garamond-v24-latin/eb-garamond-v24-latin-bold.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'EB Garamond';
-  font-style: italic;
-  font-weight: 500;
-  src: local(''),
-       url('../fonts/eb-garamond-v24-latin/eb-garamond-v24-latin-mediumitalic.woff2') format('woff2'),
-       url('../fonts/eb-garamond-v24-latin/eb-garamond-v24-latin-mediumitalic.woff') format('woff');
+    font-family: 'EB Garamond';
+    font-style: normal;
+    font-weight: 800;
+    src: local(''),
+         url('../fonts/eb-garamond-v24-latin/eb-garamond-v24-latin-extrabold.woff2') format('woff2'),
+         url('../fonts/eb-garamond-v24-latin/eb-garamond-v24-latin-extrabold.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'EB Garamond';
-  font-style: italic;
-  font-weight: 600;
-  src: local(''),
-       url('../fonts/eb-garamond-v24-latin/eb-garamond-v24-latin-semibolditalic.woff2') format('woff2'),
-       url('../fonts/eb-garamond-v24-latin/eb-garamond-v24-latin-semibolditalic.woff') format('woff');
+    font-family: 'EB Garamond';
+    font-style: italic;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/eb-garamond-v24-latin/eb-garamond-v24-latin-italic.woff2') format('woff2'),
+         url('../fonts/eb-garamond-v24-latin/eb-garamond-v24-latin-italic.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'EB Garamond';
-  font-style: italic;
-  font-weight: 700;
-  src: local(''),
-       url('../fonts/eb-garamond-v24-latin/eb-garamond-v24-latin-bolditalic.woff2') format('woff2'),
-       url('../fonts/eb-garamond-v24-latin/eb-garamond-v24-latin-bolditalic.woff') format('woff');
+    font-family: 'EB Garamond';
+    font-style: italic;
+    font-weight: 500;
+    src: local(''),
+         url('../fonts/eb-garamond-v24-latin/eb-garamond-v24-latin-mediumitalic.woff2') format('woff2'),
+         url('../fonts/eb-garamond-v24-latin/eb-garamond-v24-latin-mediumitalic.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'EB Garamond';
-  font-style: italic;
-  font-weight: 800;
-  src: local(''),
-       url('../fonts/eb-garamond-v24-latin/eb-garamond-v24-latin-extrabolditalic.woff2') format('woff2'),
-       url('../fonts/eb-garamond-v24-latin/eb-garamond-v24-latin-extrabolditalic.woff') format('woff');
+    font-family: 'EB Garamond';
+    font-style: italic;
+    font-weight: 600;
+    src: local(''),
+         url('../fonts/eb-garamond-v24-latin/eb-garamond-v24-latin-semibolditalic.woff2') format('woff2'),
+         url('../fonts/eb-garamond-v24-latin/eb-garamond-v24-latin-semibolditalic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'EB Garamond';
+    font-style: italic;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/eb-garamond-v24-latin/eb-garamond-v24-latin-bolditalic.woff2') format('woff2'),
+         url('../fonts/eb-garamond-v24-latin/eb-garamond-v24-latin-bolditalic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'EB Garamond';
+    font-style: italic;
+    font-weight: 800;
+    src: local(''),
+         url('../fonts/eb-garamond-v24-latin/eb-garamond-v24-latin-extrabolditalic.woff2') format('woff2'),
+         url('../fonts/eb-garamond-v24-latin/eb-garamond-v24-latin-extrabolditalic.woff') format('woff');
 }
 
 @font-face {
@@ -297,312 +328,312 @@ body {
     src: local(''),
          url('../fonts/iosevka/iosevka-fixed-3.0.0/iosevka-fixed-extralight.woff2') format('woff2'),
          url('../fonts/iosevka/iosevka-fixed-3.0.0/iosevka-fixed-extralight.woff') format('woff');
-  }
+}
 
-  @font-face {
+@font-face {
     font-family: "Iosevka Fixed";
     font-style: normal;
     font-weight: 300;
     src: local(''),
          url('../fonts/iosevka/iosevka-fixed-3.0.0/iosevka-fixed-light.woff2') format('woff2'),
          url('../fonts/iosevka/iosevka-fixed-3.0.0/iosevka-fixed-light.woff') format('woff');
-  }
+}
 
-  @font-face {
+@font-face {
     font-family: "Iosevka Fixed";
     font-style: normal;
     font-weight: 400;
     src: local(''),
          url('../fonts/iosevka/iosevka-fixed-3.0.0/iosevka-fixed-regular.woff2') format('woff2'),
          url('../fonts/iosevka/iosevka-fixed-3.0.0/iosevka-fixed-regular.woff') format('woff');
-  }
+}
 
-  @font-face {
+@font-face {
     font-family: "Iosevka Fixed";
     font-style: normal;
     font-weight: 500;
     src: local(''),
          url('../fonts/iosevka/iosevka-fixed-3.0.0/iosevka-fixed-medium.woff2') format('woff2'),
          url('../fonts/iosevka/iosevka-fixed-3.0.0/iosevka-fixed-medium.woff') format('woff');
-  }
+}
 
-  @font-face {
+@font-face {
     font-family: "Iosevka Fixed";
     font-style: normal;
     font-weight: 600;
     src: local(''),
          url('../fonts/iosevka/iosevka-fixed-3.0.0/iosevka-fixed-semibold.woff2') format('woff2'),
          url('../fonts/iosevka/iosevka-fixed-3.0.0/iosevka-fixed-semibold.woff') format('woff');
-  }
+}
 
-  @font-face {
+@font-face {
     font-family: "Iosevka Fixed";
     font-style: normal;
     font-weight: 700;
     src: local(''),
          url('../fonts/iosevka/iosevka-fixed-3.0.0/iosevka-fixed-bold.woff2') format('woff2'),
          url('../fonts/iosevka/iosevka-fixed-3.0.0/iosevka-fixed-bold.woff') format('woff');
-  }
+}
 
-  @font-face {
+@font-face {
     font-family: "Iosevka Fixed";
     font-style: normal;
     font-weight: 800;
     src: local(''),
          url('../fonts/iosevka/iosevka-fixed-3.0.0/iosevka-fixed-extrabold.woff2') format('woff2'),
          url('../fonts/iosevka/iosevka-fixed-3.0.0/iosevka-fixed-extrabold.woff') format('woff');
-  }
+}
 
-  @font-face {
+@font-face {
     font-family: "Iosevka Fixed";
     font-style: oblique;
     font-weight: 200;
     src: local(''),
          url('../fonts/iosevka/iosevka-fixed-3.0.0/iosevka-fixed-extralightoblique.woff2') format('woff2'),
          url('../fonts/iosevka/iosevka-fixed-3.0.0/iosevka-fixed-extralightoblique.woff') format('woff');
-  }
+}
 
-  @font-face {
+@font-face {
     font-family: "Iosevka Fixed";
     font-style: oblique;
     font-weight: 300;
     src: local(''),
          url('../fonts/iosevka/iosevka-fixed-3.0.0/iosevka-fixed-lightoblique.woff2') format('woff2'),
          url('../fonts/iosevka/iosevka-fixed-3.0.0/iosevka-fixed-lightoblique.woff') format('woff');
-  }
+}
 
-  @font-face {
+@font-face {
     font-family: "Iosevka Fixed";
     font-style: oblique;
     font-weight: 400;
     src: local(''),
          url('../fonts/iosevka/iosevka-fixed-3.0.0/iosevka-fixed-oblique.woff2') format('woff2'),
          url('../fonts/iosevka/iosevka-fixed-3.0.0/iosevka-fixed-oblique.woff') format('woff');
-  }
+}
 
-  @font-face {
+@font-face {
     font-family: "Iosevka Fixed";
     font-style: oblique;
     font-weight: 500;
     src: local(''),
          url('../fonts/iosevka/iosevka-fixed-3.0.0/iosevka-fixed-mediumoblique.woff2') format('woff2'),
          url('../fonts/iosevka/iosevka-fixed-3.0.0/iosevka-fixed-mediumoblique.woff') format('woff');
-  }
+}
 
-  @font-face {
+@font-face {
     font-family: "Iosevka Fixed";
     font-style: oblique;
     font-weight: 600;
     src: local(''),
          url('../fonts/iosevka/iosevka-fixed-3.0.0/iosevka-fixed-semiboldoblique.woff2') format('woff2'),
          url('../fonts/iosevka/iosevka-fixed-3.0.0/iosevka-fixed-semiboldoblique.woff') format('woff');
-  }
+}
 
-  @font-face {
+@font-face {
     font-family: "Iosevka Fixed";
     font-style: oblique;
     font-weight: 700;
     src: local(''),
          url('../fonts/iosevka/iosevka-fixed-3.0.0/iosevka-fixed-boldoblique.woff2') format('woff2'),
          url('../fonts/iosevka/iosevka-fixed-3.0.0/iosevka-fixed-boldoblique.woff') format('woff');
-  }
+}
 
-  @font-face {
+@font-face {
     font-family: "Iosevka Fixed";
     font-style: oblique;
     font-weight: 800;
     src: local(''),
          url('../fonts/iosevka/iosevka-fixed-3.0.0/iosevka-fixed-extraboldoblique.woff2') format('woff2'),
          url('../fonts/iosevka/iosevka-fixed-3.0.0/iosevka-fixed-extraboldoblique.woff') format('woff');
-  }
-
-  @font-face {
-      font-family: "Iosevka Fixed";
-      font-style: italic;
-      font-weight: 200;
-      src: local(''),
-           url('../fonts/iosevka/iosevka-fixed-3.0.0/iosevka-fixed-extralightitalic.woff2') format('woff2'),
-           url('../fonts/iosevka/iosevka-fixed-3.0.0/iosevka-fixed-extralightitalic.woff') format('woff');
-    }
-
-    @font-face {
-      font-family: "Iosevka Fixed";
-      font-style: italic;
-      font-weight: 300;
-      src: local(''),
-           url('../fonts/iosevka/iosevka-fixed-3.0.0/iosevka-fixed-lightitalic.woff2') format('woff2'),
-           url('../fonts/iosevka/iosevka-fixed-3.0.0/iosevka-fixed-lightitalic.woff') format('woff');
-    }
-
-    @font-face {
-      font-family: "Iosevka Fixed";
-      font-style: italic;
-      font-weight: 400;
-      src: local(''),
-           url('../fonts/iosevka/iosevka-fixed-3.0.0/iosevka-fixed-italic.woff2') format('woff2'),
-           url('../fonts/iosevka/iosevka-fixed-3.0.0/iosevka-fixed-italic.woff') format('woff');
-    }
-
-    @font-face {
-      font-family: "Iosevka Fixed";
-      font-style: italic;
-      font-weight: 500;
-      src: local(''),
-           url('../fonts/iosevka/iosevka-fixed-3.0.0/iosevka-fixed-mediumitalic.woff2') format('woff2'),
-           url('../fonts/iosevka/iosevka-fixed-3.0.0/iosevka-fixed-mediumitalic.woff') format('woff');
-    }
-
-    @font-face {
-      font-family: "Iosevka Fixed";
-      font-style: italic;
-      font-weight: 600;
-      src: local(''),
-           url('../fonts/iosevka/iosevka-fixed-3.0.0/iosevka-fixed-semibolditalic.woff2') format('woff2'),
-           url('../fonts/iosevka/iosevka-fixed-3.0.0/iosevka-fixed-semibolditalic.woff') format('woff');
-    }
-
-    @font-face {
-      font-family: "Iosevka Fixed";
-      font-style: italic;
-      font-weight: 700;
-      src: local(''),
-           url('../fonts/iosevka/iosevka-fixed-3.0.0/iosevka-fixed-bolditalic.woff2') format('woff2'),
-           url('../fonts/iosevka/iosevka-fixed-3.0.0/iosevka-fixed-bolditalic.woff') format('woff');
-    }
-
-    @font-face {
-      font-family: "Iosevka Fixed";
-      font-style: italic;
-      font-weight: 800;
-      src: local(''),
-           url('../fonts/iosevka/iosevka-fixed-3.0.0/iosevka-fixed-extrabolditalic.woff2') format('woff2'),
-           url('../fonts/iosevka/iosevka-fixed-3.0.0/iosevka-fixed-extrabolditalic.woff') format('woff');
-    }
-
-@font-face {
-  font-family: "Iosevka Fixed Slab";
-  font-style: normal;
-  font-weight: 200;
-  src: local(''),
-       url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-extralight.woff2') format('woff2'),
-       url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-extralight.woff') format('woff');
 }
 
 @font-face {
-  font-family: "Iosevka Fixed Slab";
-  font-style: normal;
-  font-weight: 300;
-  src: local(''),
-       url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-light.woff2') format('woff2'),
-       url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-light.woff') format('woff');
+    font-family: "Iosevka Fixed";
+    font-style: italic;
+    font-weight: 200;
+    src: local(''),
+         url('../fonts/iosevka/iosevka-fixed-3.0.0/iosevka-fixed-extralightitalic.woff2') format('woff2'),
+         url('../fonts/iosevka/iosevka-fixed-3.0.0/iosevka-fixed-extralightitalic.woff') format('woff');
 }
 
 @font-face {
-  font-family: "Iosevka Fixed Slab";
-  font-style: normal;
-  font-weight: 400;
-  src: local(''),
-       url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-regular.woff2') format('woff2'),
-       url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-regular.woff') format('woff');
+    font-family: "Iosevka Fixed";
+    font-style: italic;
+    font-weight: 300;
+    src: local(''),
+         url('../fonts/iosevka/iosevka-fixed-3.0.0/iosevka-fixed-lightitalic.woff2') format('woff2'),
+         url('../fonts/iosevka/iosevka-fixed-3.0.0/iosevka-fixed-lightitalic.woff') format('woff');
 }
 
 @font-face {
-  font-family: "Iosevka Fixed Slab";
-  font-style: normal;
-  font-weight: 500;
-  src: local(''),
-       url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-medium.woff2') format('woff2'),
-       url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-medium.woff') format('woff');
+    font-family: "Iosevka Fixed";
+    font-style: italic;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/iosevka/iosevka-fixed-3.0.0/iosevka-fixed-italic.woff2') format('woff2'),
+         url('../fonts/iosevka/iosevka-fixed-3.0.0/iosevka-fixed-italic.woff') format('woff');
 }
 
 @font-face {
-  font-family: "Iosevka Fixed Slab";
-  font-style: normal;
-  font-weight: 600;
-  src: local(''),
-       url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-semibold.woff2') format('woff2'),
-       url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-semibold.woff') format('woff');
+    font-family: "Iosevka Fixed";
+    font-style: italic;
+    font-weight: 500;
+    src: local(''),
+         url('../fonts/iosevka/iosevka-fixed-3.0.0/iosevka-fixed-mediumitalic.woff2') format('woff2'),
+         url('../fonts/iosevka/iosevka-fixed-3.0.0/iosevka-fixed-mediumitalic.woff') format('woff');
 }
 
 @font-face {
-  font-family: "Iosevka Fixed Slab";
-  font-style: normal;
-  font-weight: 700;
-  src: local(''),
-       url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-bold.woff2') format('woff2'),
-       url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-bold.woff') format('woff');
+    font-family: "Iosevka Fixed";
+    font-style: italic;
+    font-weight: 600;
+    src: local(''),
+         url('../fonts/iosevka/iosevka-fixed-3.0.0/iosevka-fixed-semibolditalic.woff2') format('woff2'),
+         url('../fonts/iosevka/iosevka-fixed-3.0.0/iosevka-fixed-semibolditalic.woff') format('woff');
 }
 
 @font-face {
-  font-family: "Iosevka Fixed Slab";
-  font-style: normal;
-  font-weight: 800;
-  src: local(''),
-       url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-extrabold.woff2') format('woff2'),
-       url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-extrabold.woff') format('woff');
+    font-family: "Iosevka Fixed";
+    font-style: italic;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/iosevka/iosevka-fixed-3.0.0/iosevka-fixed-bolditalic.woff2') format('woff2'),
+         url('../fonts/iosevka/iosevka-fixed-3.0.0/iosevka-fixed-bolditalic.woff') format('woff');
 }
 
 @font-face {
-  font-family: "Iosevka Fixed Slab";
-  font-style: oblique;
-  font-weight: 200;
-  src: local(''),
-       url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-extralightoblique.woff2') format('woff2'),
-       url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-extralightoblique.woff') format('woff');
+    font-family: "Iosevka Fixed";
+    font-style: italic;
+    font-weight: 800;
+    src: local(''),
+         url('../fonts/iosevka/iosevka-fixed-3.0.0/iosevka-fixed-extrabolditalic.woff2') format('woff2'),
+         url('../fonts/iosevka/iosevka-fixed-3.0.0/iosevka-fixed-extrabolditalic.woff') format('woff');
 }
 
 @font-face {
-  font-family: "Iosevka Fixed Slab";
-  font-style: oblique;
-  font-weight: 300;
-  src: local(''),
-       url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-lightoblique.woff2') format('woff2'),
-       url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-lightoblique.woff') format('woff');
+    font-family: "Iosevka Fixed Slab";
+    font-style: normal;
+    font-weight: 200;
+    src: local(''),
+         url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-extralight.woff2') format('woff2'),
+         url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-extralight.woff') format('woff');
 }
 
 @font-face {
-  font-family: "Iosevka Fixed Slab";
-  font-style: oblique;
-  font-weight: 400;
-  src: local(''),
-       url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-oblique.woff2') format('woff2'),
-       url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-oblique.woff') format('woff');
+    font-family: "Iosevka Fixed Slab";
+    font-style: normal;
+    font-weight: 300;
+    src: local(''),
+         url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-light.woff2') format('woff2'),
+         url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-light.woff') format('woff');
 }
 
 @font-face {
-  font-family: "Iosevka Fixed Slab";
-  font-style: oblique;
-  font-weight: 500;
-  src: local(''),
-       url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-mediumoblique.woff2') format('woff2'),
-       url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-mediumoblique.woff') format('woff');
+    font-family: "Iosevka Fixed Slab";
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-regular.woff2') format('woff2'),
+         url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-regular.woff') format('woff');
 }
 
 @font-face {
-  font-family: "Iosevka Fixed Slab";
-  font-style: oblique;
-  font-weight: 600;
-  src: local(''),
-       url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-semiboldoblique.woff2') format('woff2'),
-       url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-semiboldoblique.woff') format('woff');
+    font-family: "Iosevka Fixed Slab";
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+         url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-medium.woff2') format('woff2'),
+         url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-medium.woff') format('woff');
 }
 
 @font-face {
-  font-family: "Iosevka Fixed Slab";
-  font-style: oblique;
-  font-weight: 700;
-  src: local(''),
-       url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-boldoblique.woff2') format('woff2'),
-       url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-boldoblique.woff') format('woff');
+    font-family: "Iosevka Fixed Slab";
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+         url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-semibold.woff2') format('woff2'),
+         url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-semibold.woff') format('woff');
 }
 
 @font-face {
-  font-family: "Iosevka Fixed Slab";
-  font-style: oblique;
-  font-weight: 800;
-  src: local(''),
-       url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-extraboldoblique.woff2') format('woff2'),
-       url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-extraboldoblique.woff') format('woff');
+    font-family: "Iosevka Fixed Slab";
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-bold.woff2') format('woff2'),
+         url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: "Iosevka Fixed Slab";
+    font-style: normal;
+    font-weight: 800;
+    src: local(''),
+         url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-extrabold.woff2') format('woff2'),
+         url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-extrabold.woff') format('woff');
+}
+
+@font-face {
+    font-family: "Iosevka Fixed Slab";
+    font-style: oblique;
+    font-weight: 200;
+    src: local(''),
+         url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-extralightoblique.woff2') format('woff2'),
+         url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-extralightoblique.woff') format('woff');
+}
+
+@font-face {
+    font-family: "Iosevka Fixed Slab";
+    font-style: oblique;
+    font-weight: 300;
+    src: local(''),
+         url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-lightoblique.woff2') format('woff2'),
+         url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-lightoblique.woff') format('woff');
+}
+
+@font-face {
+    font-family: "Iosevka Fixed Slab";
+    font-style: oblique;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-oblique.woff2') format('woff2'),
+         url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-oblique.woff') format('woff');
+}
+
+@font-face {
+    font-family: "Iosevka Fixed Slab";
+    font-style: oblique;
+    font-weight: 500;
+    src: local(''),
+         url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-mediumoblique.woff2') format('woff2'),
+         url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-mediumoblique.woff') format('woff');
+}
+
+@font-face {
+    font-family: "Iosevka Fixed Slab";
+    font-style: oblique;
+    font-weight: 600;
+    src: local(''),
+         url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-semiboldoblique.woff2') format('woff2'),
+         url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-semiboldoblique.woff') format('woff');
+}
+
+@font-face {
+    font-family: "Iosevka Fixed Slab";
+    font-style: oblique;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-boldoblique.woff2') format('woff2'),
+         url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-boldoblique.woff') format('woff');
+}
+
+@font-face {
+    font-family: "Iosevka Fixed Slab";
+    font-style: oblique;
+    font-weight: 800;
+    src: local(''),
+         url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-extraboldoblique.woff2') format('woff2'),
+         url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-extraboldoblique.woff') format('woff');
 }
 
 @font-face {
@@ -612,58 +643,58 @@ body {
     src: local(''),
          url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-extralightitalic.woff2') format('woff2'),
          url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-extralightitalic.woff') format('woff');
-  }
+}
 
-  @font-face {
+@font-face {
     font-family: "Iosevka Fixed Slab";
     font-style: italic;
     font-weight: 300;
     src: local(''),
          url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-lightitalic.woff2') format('woff2'),
          url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-lightitalic.woff') format('woff');
-  }
+}
 
-  @font-face {
+@font-face {
     font-family: "Iosevka Fixed Slab";
     font-style: italic;
     font-weight: 400;
     src: local(''),
          url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-italic.woff2') format('woff2'),
          url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-italic.woff') format('woff');
-  }
+}
 
-  @font-face {
+@font-face {
     font-family: "Iosevka Fixed Slab";
     font-style: italic;
     font-weight: 500;
     src: local(''),
          url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-mediumitalic.woff2') format('woff2'),
          url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-mediumitalic.woff') format('woff');
-  }
+}
 
-  @font-face {
+@font-face {
     font-family: "Iosevka Fixed Slab";
     font-style: italic;
     font-weight: 600;
     src: local(''),
          url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-semibolditalic.woff2') format('woff2'),
          url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-semibolditalic.woff') format('woff');
-  }
+}
 
-  @font-face {
+@font-face {
     font-family: "Iosevka Fixed Slab";
     font-style: italic;
     font-weight: 700;
     src: local(''),
          url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-bolditalic.woff2') format('woff2'),
          url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-bolditalic.woff') format('woff');
-  }
+}
 
-  @font-face {
+@font-face {
     font-family: "Iosevka Fixed Slab";
     font-style: italic;
     font-weight: 800;
     src: local(''),
          url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-extrabolditalic.woff2') format('woff2'),
          url('../fonts/iosevka/iosevka-fixed-slab-3.0.0/iosevka-fixed-slab-extrabolditalic.woff') format('woff');
-  }
+}
