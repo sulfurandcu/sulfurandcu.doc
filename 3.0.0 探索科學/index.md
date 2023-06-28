@@ -1,3 +1,3 @@
-# 走近科學世界 <!-- {comment docsify-ignore-all} -->
+# 探索科學 <!-- {docsify-ignore-all} -->
 
 ---

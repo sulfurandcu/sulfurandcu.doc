@@ -1,3 +1,3 @@
 <!-- docs/_sidebar.md -->
 
-- [走近哲學世界](./index.md)
+- [探索哲學](./index.md)

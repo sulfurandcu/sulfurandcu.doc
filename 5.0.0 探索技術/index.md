@@ -1,3 +1,3 @@
-# 走近技術世界 <!-- {comment docsify-ignore-all} -->
+# 探索技術 <!-- {docsify-ignore-all} -->
 
 ---

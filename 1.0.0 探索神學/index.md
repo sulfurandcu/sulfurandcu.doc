@@ -1,3 +1,3 @@
-# 走近神學世界 <!-- {comment docsify-ignore-all} -->
+# 探索神學 <!-- {docsify-ignore-all} -->
 
 ---

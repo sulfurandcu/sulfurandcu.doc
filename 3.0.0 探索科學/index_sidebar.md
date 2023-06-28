@@ -1,3 +1,3 @@
 <!-- docs/_sidebar.md -->
 
-- [走近科學世界](./index.md)
+- [探索科學](./index.md)

@@ -1,3 +1,3 @@
 <!-- docs/_sidebar.md -->
 
-- [走近神學世界](./index.md)
+- [探索神學](./index.md)

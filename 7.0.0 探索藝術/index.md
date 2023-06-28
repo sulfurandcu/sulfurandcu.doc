@@ -1,3 +1,3 @@
-# 走近藝術世界 <!-- {comment docsify-ignore-all} -->
+# 探索藝術 <!-- {docsify-ignore-all} -->
 
 ---
