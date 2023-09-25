@@ -47,8 +47,7 @@
 }
 
 body {
-    font-family:"Amstelvar",
-                "Source Han Serif SC", "Source Han Serif TC", "Source Han Serif HC", "Source Han Serif CN", "Source Han Serif TW", "Source Han Serif HK",
+    font-family:"Iosevka Fixed Slab",
                 "Source Han Sans SC", "Source Han Sans TC", "Source Han Sans HC", "Source Han Sans CN", "Source Han Sans TW", "Source Han Sans HK",
                 "PingFang SC",
                 "Microsoft YaHei",
@@ -64,11 +63,13 @@ figure.thumbnails img {
 
 .sidebar {
     font-family:"Iosevka Fixed Slab", "Courier New",
-                "Source Han Serif SC", "Source Han Serif TC", "Source Han Serif HC", "Source Han Serif CN", "Source Han Serif TW", "Source Han Serif HK",
                 "Source Han Sans SC", "Source Han Sans TC", "Source Han Sans HC", "Source Han Sans CN", "Source Han Sans TW", "Source Han Sans HK",
                 "PingFang SC",
                 "Microsoft YaHei",
                 sans-serif;
+    .app-name {
+        font-family: "Source Han Serif SC", "Microsoft YaHei";
+    }
 }
 .sidebar-nav a:hover {
     text-decoration: none;
@@ -131,7 +132,6 @@ figure.thumbnails img {
 
 .custom-font {
     font-family:"Iosevka Fixed Slab", "Courier New",
-                "Source Han Serif SC", "Source Han Serif TC", "Source Han Serif HC", "Source Han Serif CN", "Source Han Serif TW", "Source Han Serif HK",
                 "Source Han Sans SC", "Source Han Sans TC", "Source Han Sans HC", "Source Han Sans CN", "Source Han Sans TW", "Source Han Sans HK",
                 "PingFang SC",
                 "Microsoft YaHei",
@@ -141,7 +141,6 @@ figure.thumbnails img {
 .custom-font-table {
     font-size: xx-small;
     font-family:"Iosevka Fixed Slab", "Courier New",
-                "Source Han Serif SC", "Source Han Serif TC", "Source Han Serif HC", "Source Han Serif CN", "Source Han Serif TW", "Source Han Serif HK",
                 "Source Han Sans SC", "Source Han Sans TC", "Source Han Sans HC", "Source Han Sans CN", "Source Han Sans TW", "Source Han Sans HK",
                 "PingFang SC",
                 "Microsoft YaHei",
